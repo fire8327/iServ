@@ -1,7 +1,19 @@
+/* body and global classes */
 body {
     font-weight: 600; 
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
 }
 
+
+/* header */
 header {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; 
@@ -13,9 +25,6 @@ header {
 }
 
 .header-main {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex; 
     padding-left: 1rem;
     padding-right: 1rem; 
@@ -67,4 +76,107 @@ nav {
     display: flex; 
     gap: 0.5rem; 
     align-items: center; 
+}
+
+
+/* main */
+main {    
+    display: flex;
+    flex-direction: column; 
+    gap: 3rem; 
+}
+
+
+/* first block  */
+.first-block {
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+    width: 100%; 
+}
+
+.main-first {
+    display: flex; 
+    gap: 4rem; 
+    align-items: center;
+}
+.main-first div {
+    display: flex; 
+    flex-direction: column; 
+    gap: 3rem; 
+    width: 50%; 
+}
+.main-first img {
+    border-radius: 1rem; 
+    width: 50%; 
+}
+
+.first-p {
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+}
+
+
+/* advantages */
+.advantages {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+}
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem; 
+}
+
+.advantages > div {
+    display: grid ;
+    gap: 2rem; 
+}
+
+@media (min-width: 1024px) { 
+    .advantages > div {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+}
+@media (min-width: 1280px) { 
+    .advantages > div {      
+        grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    }
+}
+
+.advantages-block {
+    display: flex; 
+    padding: 1rem; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+    border-radius: 0.75rem; 
+    border-width: 1px; 
+    border-color: #E5E7EB; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms; 
+}
+.advantages-block:hover {
+    transform: scale(1.1);
+}
+
+
+/* makers */ 
+.makers {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
+.makers > div {
+    display: grid; 
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    gap: 1.5rem; 
+}
+.makers img {
+    border-radius: 1rem; 
 }
