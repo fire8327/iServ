@@ -180,3 +180,35 @@ main {
 .makers img {
     border-radius: 1rem; 
 }
+
+/* prices */
+.prices {
+    overflow-x: auto; 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
+
+.prices-table {
+    width: 100%; 
+    text-align: right; 
+}
+.prices-table > thead {
+    color: #374151; 
+    text-transform: uppercase; 
+    background: #ff531554;
+}
+.prices-table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+}
+.prices-table > tbody > tr {
+    border-bottom-width: 1px; 
+    border-color: #ff5215;
+}
+.text-left {
+    text-align: left; 
+} 
