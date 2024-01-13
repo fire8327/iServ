@@ -208,6 +208,12 @@ main {
 .prices-table > tbody > tr {
     border-bottom-width: 1px; 
     border-color: #ff5215;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+.prices-table > tbody > tr:hover {
+    background: #ff53151e;
 }
 .text-left {
     text-align: left; 
