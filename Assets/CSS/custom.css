@@ -268,7 +268,8 @@ main {
 }
 
 .contacts-left, .contacts-right {
-    width: 50%; display: flex; 
+    width: 50%; 
+    display: flex; 
     flex-direction: column; 
     gap: 0.75rem; 
 }
@@ -323,5 +324,33 @@ main {
 
 /* reviews */
 .reviews {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
 
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex; 
+    padding: 1rem; 
+    flex-direction: column; 
+    gap: 1rem; 
+    border-radius: 0.75rem; 
+    border-width: 1px; 
+    border-color: #ff5215;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ff5215 !important;
+}
+
+.swiper-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
