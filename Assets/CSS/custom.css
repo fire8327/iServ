@@ -399,3 +399,20 @@ footer {
     line-height: 1rem; 
     text-transform: uppercase; 
 }
+
+
+/* scrollToTop */
+#scrollToTop {
+    display: flex; 
+    position: fixed; 
+    right: 2rem; 
+    bottom: 2rem; 
+    z-index: 20; 
+    padding: 0.5rem; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 9999px; 
+    width: 2.5rem; 
+    height: 2.5rem; 
+    background: #ff53151e;
+}
